@@ -1,0 +1,228 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.news--section {
+  display: none;
+}
+.hero__section {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+.hero__section--header {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+}
+#icon {
+  position: absolute;
+  width: 4em;
+  height: 4rem;
+  z-index: 400;
+  transition: 0.2s all;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#icon:hover {
+  opacity: 1;
+
+  position: absolute;
+  width: 10em;
+  height: 10rem;
+}
+.hero__section--header--left {
+  width: 50%;
+  height: 100%;
+  padding: 2.5rem;
+  z-index: 5;
+  position: relative;
+}
+#gcoffee {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.8s ease-in-out;
+}
+.hero__section--header--right {
+  position: absolute;
+  width: 70vw;
+  height: 90vh;
+  background: #f4f27e;
+  top: 1rem;
+  left: 25rem;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+}
+.hero__section--header--right:hover #gcoffee {
+  opacity: 0.4;
+}
+.mv {
+  position: relative;
+  padding: 1rem 1.25rem;
+  border: 1px solid #000;
+  max-width: fit-content;
+  left: 52rem;
+  border-radius: 2rem;
+  z-index: 10;
+}
+#intro {
+  font-size: 7rem;
+  font-weight: 700;
+}
+#context {
+  margin-top: 2rem;
+  font-size: 2.85rem;
+}
+#work {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hero__section--mid {
+  width: 100%;
+  height: 100vh;
+  padding: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+#smid-head {
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+.comments {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+#ctext {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.card {
+  position: absolute;
+  width: 25rem;
+  height: auto;
+  padding: 1rem 1.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  border-radius: 1rem;
+  transition: 0.25s all;
+}
+.card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  background-color: rgba(255, 248, 108, 0.682);
+}
+.card--2 {
+  left: 27rem;
+  top: 2rem;
+}
+.card--3 {
+  left: 54rem;
+  top: 0rem;
+}
+.card--4 {
+  top: 10rem;
+}
+.card--5 {
+  top: 20rem;
+}
+.card--6 {
+  left: 27rem;
+  top: 15rem;
+}
+.card--7 {
+  left: 54rem;
+  top: 14rem;
+}
+#user {
+  font-weight: 400;
+  font-style: italic;
+  text-align: end;
+  font-family: "Raleway", sans-serif;
+}
+.hero__section--bottom {
+  padding: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f27e;
+}
+.newsletter--signup {
+  display: flex;
+}
+.text--sup {
+  width: 50%;
+  margin-top: 2rem;
+}
+.mtext {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+strong {
+  background-color: #b1b1b1;
+}
+.sup--form {
+  width: 50%;
+  padding-left: 2rem;
+}
+.form__email {
+  width: 70%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #d6d6d6;
+}
+#sub-btn {
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+#sub-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  background-color: #009b0d;
+}
+input[type="email"] {
+  outline: none;
+  border: none;
+}
+input[type="email"]:hover {
+  outline: none;
+  border: none;
+}
+button[type="submit"] {
+  outline: none;
+  border: none;
+}
+button[type="submit"]:hover {
+  outline: none;
+  border: none;
+}
+#info--text {
+  padding-top: 2rem;
+  font-size: 2.6rem;
+  text-align: end;
+  color: #292929;
+}
+.footer {
+  padding: 2.5rem;
+  text-align: end;
+}
+#footer-text {
+  font-size: 1rem 2.25rem;
+  font-family: "Poppins", sans-serif;
+  color: #7a7a7a;
+}
+/* 
+
+  <form action="" class="email-form" method="POST">
+        {% csrf_token %}
+        {{form.email}}
+      </form>
+*/
