@@ -118,12 +118,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
-STATIC_URL = '/images/'
-# user generated content
-MEDIA_ROOT = os.path.join(BASE_DIR,"static/images")
-MEDIA_URL = '/media/'
-STATICFILES_DIRS = [ BASE_DIR , 'static' ]
+STATIC_URL = '/static/'
+
+MEDIA_URL='/images/'
+
+STATICFILES_DIRS=[
+   BASE_DIR/'static'
+]
+
+# where to upload content submitted by user
+
+MEDIA_ROOT=os.path.join(BASE_DIR,'static/images')
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+
 
 
 # Default primary key field type
